@@ -1,11 +1,35 @@
-<h1>Random Password Generator</h1>
-<label for="length">Length:</label>
-<input id="length"><br>
-<input type="radio" id="male" name="gender" value="male">
-<label for="male">Male</label><br>
-<input type="radio" id="male" name="gender" value="male">
-<label for="male">Male</label><br>
-<input type="radio" id="male" name="gender" value="male">
-<label for="male">Male</label><br>
+<div class="container">
+    <h1>Random Password Generator</h1>
 
+    <div>
+        <label for="length">Length:</label>
+        <input id="length" (input)="lengthOfPassword($event.target.value)">
+    </div>
+
+    <div>
+        <input (change)="onChangeNumbers()"type="checkbox" id="number" value="number">
+        <label for="number">Numbers</label>
+    </div>
+
+    <div>
+        <input (change)="onChangeLetters()"type="checkbox" id="letter" value="letter">
+        <label for="letter">Letters</label>
+    </div>
+
+    <div>
+        <input (change)="onChangeSymbols()"type="checkbox" id="symbol" value="symbol">
+        <label for="symbol">Symbols</label>
+    </div>
+
+    <div>
+        <button [disabled]="!(lengthofpassword && (hasNumber||hasSymbol||hasLetter))"(click)="generatePassword()">Generate Pasword!</button>
+    </div>
+
+    <div>
+        <label>Your Password</label>
+        <input [value]="password">
+    </div>
+
+
+</div>
 
