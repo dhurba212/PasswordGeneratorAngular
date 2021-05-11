@@ -26,6 +26,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Deployed on now.sh
-
+## Deployed on now.sh(to deploy on now.sh follow steps below on cli)
+```
+ npm install -g now
+ now login
+ now
+```
 https://password-generator-angular-beta.vercel.app
