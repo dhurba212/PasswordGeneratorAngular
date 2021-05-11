@@ -1,4 +1,18 @@
 .container{
     text-align: center;
+    
     /* align-items: center; */
+}
+.inner-container{
+    padding: 10px;
+    
+}
+div{
+    margin-bottom: 20px;
+}
+button{
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(59, 88, 252);
 }
